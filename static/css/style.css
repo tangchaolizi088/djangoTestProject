@@ -1,8 +1,11 @@
 
 .smart-green {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 500px;
+    width: 500px;
+    position:fixed;
+    top:35%;
+    left:50%;
+    transform:translateX(-50%) translateY(-50%);
+    webkit-transform:translateX(-50%) translateY(-50%);
     background: #F8F8F8;
     padding: 30px 30px 20px 30px;
     font: 12px Arial, Helvetica, sans-serif;
@@ -57,7 +60,10 @@
     box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
     font: normal 14px/14px Arial, Helvetica, sans-serif;
 }
-
+.smart-green input[type="text"], .smart-green input[type="email"], .smart-green textarea, .smart-green select:focus{
+    border:1px solid #9DC45F;
+    box-shadow: 0 0 2px #9DC45F;
+}
 .smart-green textarea {
     height: 100px;
     padding-top: 10px;

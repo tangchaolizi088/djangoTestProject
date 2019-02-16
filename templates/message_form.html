@@ -36,11 +36,11 @@
         <div class="error-msg"></div>
     </label>
     <div class="success-msg"></div>
-    <label>
+    <label style="width:80px;float:right; ">
         <span>&nbsp;</span>
-        <input type="submit" class="button" value="提交"/>
+        <input type="submit" class="button" value="提交" style="cursor: pointer;"/>
     </label>
-    <input type='hidden' name='csrfmiddlewaretoken' value='SfHkbL4feo1G00sJQtbO7TtLN4c2BUwa' />
+    {% csrf_token %}
 </form>
 
 </body>
