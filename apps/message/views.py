@@ -6,6 +6,12 @@ from models import UserMessage
 # Create your views here.
 
 
+
+def index(request):
+    return render(request,'message_form.html')
+
+
+
 def getform(request):
     if request.method == 'POST':
         name = request.POST.get('name','')

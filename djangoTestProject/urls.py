@@ -16,8 +16,11 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from message.views import getform
+from message.views import index
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$',getform)
+    url(r'index/$',index)
+    # 127.0.0.1:8000/index/
+    # url(r'^form/$',getform)
 ]
